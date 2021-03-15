@@ -26,7 +26,6 @@ h2 {
     height: 700px;
     width: 500px;
     box-shadow: 2px 4px 6px black;
-    text-align: justify;
 }
 
 
@@ -36,8 +35,8 @@ h2 {
 /* Hide scrollbar for Chrome, Safari and Opera */
 body::-webkit-scrollbar {
     display: none;
-  }
-  
+}
+
 /* HEADER */
 .container {
     width: 100%;
@@ -62,12 +61,12 @@ body::-webkit-scrollbar {
 
 #home {
     display: flex;
+    align-items: center;
 
 }
 
 .nav {
-    position: relative;
-    bottom: 10%;
+    margin-bottom: 50px;
     width: 350px;
     font-size: 1.2rem;
     margin-left: 5%;
@@ -98,29 +97,33 @@ a:hover::after {
 
 
 a {
+
     color: #221C0E;
     text-decoration: none;
     transition: color 0.5s ease-in;
 
 }
 
+
 /* SOBRE NOS */
 .grid2 {
     padding-top: 70px;
     margin: auto;
-    width: 90%;
+    width: 85%;
     height: auto;
     color: rgb(66, 65, 65);
+    
 }
 
 #sobre p,
-ul,
-li,
-strong {
+#sobre ul,
+#sobre li,
+#sobre strong {
     margin-top: 25px;
     font-size: 1.2rem;
     font-family: 'Arvo', serif;
     max-width: 1200px;
+    text-align: justify;
 }
 
 
@@ -152,16 +155,232 @@ strong {
     margin-bottom: 90px;
 }
 
-.icon {
-    position: fixed;
-    top: 700px;
-    left: 1500px;
+
+.click2 {
+    order: 1;
 }
 
-.icon img {
-    padding: 5px;
-    width: 35px;
-    height: 35px;
-    border-radius: 30px;
-    border: solid black;
+/* Responsivo tablet */
+
+@media only screen and (min-width: 641px) and (max-width: 1010px) {
+
+    /*******Header*********/
+
+    #home {
+        display: flex;
+        justify-content: space-around;
+    }
+
+    a {
+        font-size: 1.2rem;
+    }
+
+    main {
+        text-align: center;
+        font-size: 1.2rem;
+    }
+
+    main h1 {
+        margin-bottom: 20px;
+    }
+
+    /*******SOBRE NOS*********/
+
+    .sobrenos {
+        font-size: 1rem;
+    }
+
+    #sobre p {
+        font-size: 1rem;
+        text-align: justify;
+    }
+
+    #sobre li {
+        font-size: 1rem;
+    }
+
+    /*******PRODUTOS*********/
+
+    #produtos .h2 {
+        font-size: 1.5rem;
+    }
+
+    #produtos p {
+        margin-top: 25px;
+        font-size: 1rem;
+        max-width: 800px;
+        font-family: 'Arvo', serif;
+        text-align: justify;
+    }
+
+    .flex {
+        flex-direction: column;
+    }
+
+    .espacamento {
+        margin-left: 0;
+        margin-top: 50px;
+    }
+
+    .espacamento-inverso {
+        margin-top: 50px;
+        margin-right: 0;
+    }
+
+    .espacDivs {
+        margin-bottom: 90px;
+    }
+
+    .click2 {
+        order: 0;
+    }
+
+    #produtos img {
+        max-width: 70%;
+        height: auto;
+        object-fit: cover;
+    }
+
+    .grid2 {
+        padding-top: 70px;
+        margin: auto;
+        width: 85vw;
+        height: auto;
+        color: rgb(66, 65, 65);
+    }
+
+
+}
+
+/* REPONSIVO MOBILE */
+
+@media only screen and (max-width: 640px) {
+    
+    /* HEADER */
+    
+    .container {
+        width: 100%;
+        height: 65vh;
+        font-size: 1rem;
+        background-image: url(https://images.pexels.com/photos/1687147/pexels-photo-1687147.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    .logo {
+        width: 30vw;
+    }
+
+    .grid {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        padding-top: 3%;
+        margin: auto;
+        width: 90%;
+        height: 62vh;;
+        color: rgb(240, 240, 240);
+    }   
+
+    
+    #home {
+        height: 200px;
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-items: center;
+    }
+
+
+    .nav {
+        width: 250px;
+        font-size: 1.2rem;
+    }
+
+    a {
+        font-size: 0.8rem;
+    }
+
+    main {
+        text-align: center;
+        font-size: 0.6rem;
+    }
+
+    main h1 {
+        margin-bottom: 15px;
+    }
+
+ /*******SOBRE NOS*********/
+    .sobrenos {
+        font-size: 1rem;
+    }
+
+    #sobre p {
+        font-size: 1rem;
+        text-align: justify;
+    }
+
+    #sobre li {
+        font-size: 1rem;
+    }
+
+    /*******PRODUTOS*********/
+
+    .grid2 {
+        padding-top: 70px;
+        margin: auto;
+        width: 70%;
+        height: auto;
+        color: rgb(66, 65, 65);
+    }
+    
+    #produtos .h2 {
+        font-size: 1.5rem;
+    }
+
+    #produtos p {
+        margin-top: 25px;
+        font-size: 1rem;
+        max-width: 800px;
+        font-family: 'Arvo', serif;
+        text-align: justify;
+    }
+
+    .flex {
+        flex-direction: column;
+    }
+
+    .espacamento {
+        margin-left: 0;
+        margin-top: 50px;
+    }
+
+    .espacamento-inverso {
+        margin-top: 50px;
+        margin-right: 0;
+    }
+
+    .espacDivs {
+        margin-bottom: 90px;
+    }
+
+    .click2 {
+        order: 0;
+    }
+
+    #produtos img {
+        width: 99%;
+        height: 450px;
+        object-fit: cover;
+    }
+
+    .grid2 {
+        padding-top: 70px;
+        margin: auto;
+        width: 85vw;
+        height: auto;
+        color: rgb(66, 65, 65);
+    }
+
 }
