@@ -13,3 +13,10 @@ function aparecer2() {
 function aparecer3() {
     document.querySelector('div.fadein3').style.opacity = '1'
 }
+
+
+
+function change() {
+    document.querySelector('.bg-lista').classList.toggle("change")
+    document.querySelector('.lista').classList.toggle("change")
+}

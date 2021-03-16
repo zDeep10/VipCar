@@ -26,6 +26,7 @@ h2 {
     height: 700px;
     width: 500px;
     box-shadow: 2px 4px 6px black;
+    cursor: pointer;
 }
 
 
@@ -77,28 +78,45 @@ body::-webkit-scrollbar {
     justify-content: space-between;
 }
 
+a {
+    color: #221C0E;
+    text-decoration: none;
+}
+
 a:visited {
     color: #221C0E;
 }
 
 a:hover {
-    color: #3b8362;
+    color: #155325;
+}
+
+a:hover::after,
+a:hover::before {
+    color: #155325;
+    transform: scaleX(1);
+    transition: transform 0.5s ease-in;
+}
+
+a:hover::before {
+    transform-origin: right;
 }
 
 a:hover::after {
+    transform-origin: left;
+}
+
+
+a::after,
+a::before {
     content: "";
     display: block;
-    width: 40px;
+    width: 100%;
     height: 1px;
     background-color: #3b8362;
     margin-top: 2px;
     margin-left: 2px;
-}
-
-
-a {
-
-    color: #221C0E;
+    transform: scaleX(0);
     text-decoration: none;
     transition: color 0.5s ease-in;
 
@@ -112,7 +130,7 @@ a {
     width: 85%;
     height: auto;
     color: rgb(66, 65, 65);
-    
+
 }
 
 #sobre p,
@@ -168,10 +186,18 @@ a {
 
     #home {
         display: flex;
-        justify-content: space-around;
+        justify-content: space-between;
+        height: 200px;
     }
 
+    
+    a:visited {
+        color: rgb(226, 225, 225);
+        font-size: 1.2rem;
+    }
+    
     a {
+        color: rgb(226, 225, 225);
         font-size: 1.2rem;
     }
 
@@ -183,6 +209,72 @@ a {
     main h1 {
         margin-bottom: 20px;
     }
+
+    #home img {
+        align-self: flex-start;
+    }
+    /* MENU HAMBURGUER */
+    .hamburguer {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        width: 35px;
+        height: 30px;
+        cursor: pointer;
+        z-index: 1;
+        
+    }
+
+    .bg-lista {
+        position: absolute;
+        top: 0;
+        right: 0;
+        background-color: rgba(19, 78, 68, 0.425);
+        width: 300px;
+        height: 300px;
+        border-radius: 50%;
+        transform: translate(90px,-30px);
+        transition: opacity 0.5s ease-in;
+        opacity: 1;
+
+    }
+
+    .change {
+        opacity: 0;
+    }
+
+    .line {
+        width: 100%;
+        background-color: rgb(31, 29, 29);
+        height: 3px;
+        border-radius: 50px;
+    }
+
+    .lista {
+        margin-top: 20px;
+        height: 100px;
+        flex-direction: column;
+        z-index: 1;
+        transition: opacity 0.5s ease-in;
+    }
+
+    .nav {
+        padding: 0;
+        margin: 0;
+    }
+
+    .nav {
+        align-self: flex-start;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        flex-direction: column;
+        text-align: center;
+        width: 100px;
+        height: 90%;
+        font-size: 1.2rem;
+    }
+
 
     /*******SOBRE NOS*********/
 
@@ -255,12 +347,12 @@ a {
 /* REPONSIVO MOBILE */
 
 @media only screen and (max-width: 640px) {
-    
+
     /* HEADER */
-    
+
     .container {
         width: 100%;
-        height: 65vh;
+        max-height: 450px;
         font-size: 1rem;
         background-image: url(https://images.pexels.com/photos/1687147/pexels-photo-1687147.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940);
         background-position: center;
@@ -269,37 +361,105 @@ a {
     }
 
     .logo {
-        width: 30vw;
+        max-width: 15%;
+        min-width: 40%;
+        height: auto;
     }
 
     .grid {
         display: flex;
         flex-direction: column;
         justify-content: space-between;
-        padding-top: 3%;
+        padding: 5% 0 5% 0;
         margin: auto;
         width: 90%;
-        height: 62vh;;
+        height: 100%;
         color: rgb(240, 240, 240);
-    }   
+    }
 
-    
+
     #home {
         height: 200px;
         display: flex;
-        flex-direction: column-reverse;
-        justify-content: center;
+        justify-content: space-between;
         align-items: center;
     }
 
+    #home img {
+        align-self: flex-start;
+    }
+
+    /* MENU HAMBURGUER */
+    .hamburguer {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        width: 35px;
+        height: 30px;
+        cursor: pointer;
+        z-index: 1;
+        
+    }
+
+    .bg-lista {
+        position: absolute;
+        top: 0;
+        right: 0;
+        background-color: rgba(19, 78, 68, 0.425);
+        width: 250px;
+        height: 250px;
+        border-radius: 50%;
+        transform: translate(90px,-30px);
+        transition: opacity 0.5s ease-in;
+        opacity: 1;
+
+    }
+
+    .change {
+        opacity: 0;
+    }
+
+    .line {
+        width: 100%;
+        background-color: rgb(82, 79, 79);
+        height: 3px;
+        border-radius: 50px;
+    }
+
+    .lista {
+        margin-top: 20px;
+        height: 100px;
+        flex-direction: column;
+        z-index: 1;
+        transition: opacity 0.5s ease-in;
+    }
 
     .nav {
-        width: 250px;
+        padding: 0;
+        margin: 0;
+    }
+
+    .nav {
+        align-self: flex-start;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        flex-direction: column;
+        text-align: center;
+        width: 80px;
+        height: 80%;
         font-size: 1.2rem;
     }
 
+    /* ----------------------------------- */
     a {
+        color: #dbdada;
         font-size: 0.8rem;
+        letter-spacing: 1px;
+    }
+
+    a:visited {
+        color: #dbdada;
     }
 
     main {
@@ -311,7 +471,7 @@ a {
         margin-bottom: 15px;
     }
 
- /*******SOBRE NOS*********/
+    /*******SOBRE NOS*********/
     .sobrenos {
         font-size: 1rem;
     }
@@ -334,7 +494,7 @@ a {
         height: auto;
         color: rgb(66, 65, 65);
     }
-    
+
     #produtos .h2 {
         font-size: 1.5rem;
     }
