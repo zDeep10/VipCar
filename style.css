@@ -71,6 +71,7 @@ body::-webkit-scrollbar {
     width: 350px;
     font-size: 1.2rem;
     margin-left: 5%;
+
 }
 
 .nav ul {
@@ -161,12 +162,10 @@ a::before {
 
 .espacamento {
     margin-left: 100px;
-    opacity: 0;
 }
 
 .espacamento-inverso {
     margin-right: 100px;
-    opacity: 0;
 }
 
 .espacDivs {
@@ -174,8 +173,12 @@ a::before {
 }
 
 
-.click2 {
+.pneu img {
     order: 1;
+}
+
+.change {
+    opacity: 0;
 }
 
 /* Responsivo tablet */
@@ -323,7 +326,7 @@ a::before {
         margin-bottom: 90px;
     }
 
-    .click2 {
+    .pneu img {
         order: 0;
     }
 
@@ -525,7 +528,7 @@ a::before {
         margin-bottom: 90px;
     }
 
-    .click2 {
+    .pneu img {
         order: 0;
     }
 
