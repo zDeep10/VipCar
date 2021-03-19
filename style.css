@@ -68,13 +68,14 @@ body::-webkit-scrollbar {
 
 .nav {
     margin-bottom: 50px;
-    width: 350px;
+    width: 500px;
     font-size: 1.2rem;
     margin-left: 5%;
 
 }
 
 .nav ul {
+    letter-spacing: 1px;
     display: flex;
     justify-content: space-between;
 }
@@ -114,7 +115,7 @@ a::before {
     display: block;
     width: 100%;
     height: 1px;
-    background-color: #3b8362;
+    background-color: #070202;
     margin-top: 2px;
     margin-left: 2px;
     transform: scaleX(0);
@@ -162,10 +163,12 @@ a::before {
 
 .espacamento {
     margin-left: 100px;
+    opacity: 0;
 }
 
 .espacamento-inverso {
     margin-right: 100px;
+    opacity: 0;
 }
 
 .espacDivs {
@@ -177,8 +180,8 @@ a::before {
     order: 1;
 }
 
-.change {
-    opacity: 0;
+.show{
+    opacity: 1;
 }
 
 /* Responsivo tablet */
@@ -233,8 +236,8 @@ a::before {
         top: 0;
         right: 0;
         background-color: rgba(19, 78, 68, 0.425);
-        width: 300px;
-        height: 300px;
+        width: 320px;
+        height: 320px;
         border-radius: 50%;
         transform: translate(90px,-30px);
         transition: opacity 0.5s ease-in;
@@ -254,6 +257,7 @@ a::before {
     }
 
     .lista {
+        letter-spacing: 1px;
         margin-top: 20px;
         height: 100px;
         flex-direction: column;
@@ -409,8 +413,8 @@ a::before {
         top: 0;
         right: 0;
         background-color: rgba(19, 78, 68, 0.425);
-        width: 250px;
-        height: 250px;
+        width: 280px;
+        height: 280px;
         border-radius: 50%;
         transform: translate(90px,-30px);
         transition: opacity 0.5s ease-in;
@@ -424,7 +428,7 @@ a::before {
 
     .line {
         width: 100%;
-        background-color: rgb(82, 79, 79);
+        background-color: rgb(10, 10, 10);
         height: 3px;
         border-radius: 50px;
     }
@@ -435,6 +439,7 @@ a::before {
         flex-direction: column;
         z-index: 1;
         transition: opacity 0.5s ease-in;
+        letter-spacing: 1px;
     }
 
     .nav {
