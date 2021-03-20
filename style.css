@@ -29,8 +29,6 @@ h2 {
     cursor: pointer;
 }
 
-
-
 /* Conteudo principal/HOME */
 
 /* Hide scrollbar for Chrome, Safari and Opera */
@@ -63,24 +61,24 @@ body::-webkit-scrollbar {
 #home {
     display: flex;
     align-items: center;
-
 }
 
 .nav {
     margin-bottom: 50px;
-    width: 500px;
+    width: 600px;
     font-size: 1.2rem;
     margin-left: 5%;
 
 }
 
 .nav ul {
-    letter-spacing: 1px;
+    letter-spacing: 2px;
     display: flex;
     justify-content: space-between;
 }
 
 a {
+    font-weight: 700;
     color: #221C0E;
     text-decoration: none;
 }

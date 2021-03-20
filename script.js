@@ -22,11 +22,15 @@ function change() {
 function show () {
     document.querySelector('.formulario').classList.add("display")
     document.querySelector('.formulario2').classList.remove("display")
+    document.querySelector('.bg').style.background= '#394e4bf3'
+    document.querySelector('.border').style.background= 'none'
 }
 
 function show2 () {
     document.querySelector('.formulario2').classList.add("display")
     document.querySelector('.formulario').classList.remove("display")
+    document.querySelector('.border').style.background= '#394e4bf3'
+    document.querySelector('.bg').style.background= 'none'
 }
 
 // X
@@ -41,4 +45,5 @@ function sair2 () {
 
 function load () {
     document.querySelector('.formulario').classList.add("display")
+    document.querySelector('.bg').style.background= '#394e4bf3'
 }

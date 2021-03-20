@@ -22,12 +22,12 @@
 
 .formulario {
     position: absolute;
-    background-image: linear-gradient(#bdbb4773, #394e4bc2);
-    width: 360px;
-    height: 500px;
+    background-image: linear-gradient(#bdbb4773, #394e4bd5);
+    width: 400px;
+    height: 550px;
     border-radius: 3%;
     text-align: center;
-    padding-bottom: 70px;
+    padding-bottom: 85px;
     margin-top: 10vh;
     opacity: 0;
     visibility: hidden;
@@ -65,12 +65,14 @@ h1 {
 
 
 .titulos h1 {
-    font-size: 3rem;
+    font-size: 3.8rem;
 }
 
 .titulos h2 {
-    margin-top: 10px;
+    margin-top: 30px;
     font-size: 2rem;
+    max-width: 260px;
+    line-height: 40px;
 }
 
 /* Caixas de texto */
@@ -80,14 +82,14 @@ h1 {
 }
 
 .flex input {
-    letter-spacing: 1px;
+    letter-spacing: 2px;
     width: 100%;
     height: auto;
     color: rgb(226, 226, 226);
     font-weight: bold;
     font-size: 0.7rem;
     border-radius: 20px;
-    padding: 12px;
+    padding: 12px 12px 12px 15px;
     background-color: rgba(24, 23, 23, 0.678);
 }
 
@@ -123,9 +125,9 @@ h1 {
 
 .formulario2 {
     position: absolute;
-    background-image: linear-gradient(#bdbb4773, #394e4bc2);
-    width: 360px;
-    height: 500px;
+    background-image: linear-gradient(#bdbb4773, #394e4bd5);
+    width: 400px;
+    height: 550px;
     border-radius: 3%;
     text-align: center;
     padding-bottom: 70px;
@@ -134,7 +136,6 @@ h1 {
     visibility: hidden;
     transition: all 0.5s ease-in;
 }
-
 
 .display {
     opacity: 1;
@@ -172,12 +173,14 @@ h2 {
 }
 
 .titulos2 h1 {
-    font-size: 3rem;
+    font-size: 3.8rem;
 }
 
 .titulos2 h2 {
     font-size: 2rem;
-    margin-top: 10px;
+    margin-top: 30px;
+    line-height: 40px;
+    max-width: 320px;
 }
 
 /* Caixas de texto */
@@ -187,14 +190,15 @@ h2 {
 }
 
 .flex2 input {
-    letter-spacing: 1px;
+   
+    letter-spacing: 2px;
     width: 100%;
     height: auto;
     color: rgb(226, 226, 226);
     font-weight: bold;
     font-size: 0.7rem;
     border-radius: 20px;
-    padding: 12px;
+    padding: 12px 12px 12px 15px;
     background-color: rgba(24, 23, 23, 0.678);
 }
 
@@ -242,19 +246,24 @@ h2 {
     padding: 5px;
     border-radius: 20px;
     cursor: pointer;
-
+    outline: none;
 }
 
+
+
 .bg {
-    background-color: #394e4bf3;
+    background: none;
     margin-right: 20px;
-    box-shadow: 1px 2px 6px black;
+    border: solid 3px black;
+    box-shadow: 0.5px 1px 3px black;
+    transition: all 0.5s ease-in;
 }
 
 .border {
     background: none;
     border: solid 3px black;
     box-shadow: 0.5px 1px 3px black;
+    transition: all 0.5s ease-in;
 }
 
 .voltar {
