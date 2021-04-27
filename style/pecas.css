@@ -365,7 +365,6 @@ body::-webkit-scrollbar {
         background-color: rgba(0, 0, 0, 0.5);
         width: 100%;
         max-width: 450px;
-        height: 100vh;
         position: absolute;
         top: 0;
         right: 0;
