@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro</title>
+    <link rel="stylesheet" href="../style/cad-log.css">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Flamenco:wght@300&display=swap" rel="stylesheet">
+
+</head>
+
+<body onload="load()">
+
+    <div class="container">
+        <header class="botoes">
+            <div class="espacamento">
+                <button onclick="show()" id="login" class="bg">Login</button>
+                <button onclick="show2()" id="sign" class="border">Sign Up</button>
+            </div>
+
+        </header>
+        <!-- Login -->
+        <div class="formulario">
+
+            <div class="icons">
+                <a href="../index.html">
+                    <img class="voltar" src="../Icon/voltar.svg" alt="seta para voltar">
+                </a>
+
+                <img onclick="sair()" src="../Icon/x.svg" alt="x">
+
+            </div>
+
+
+            <form action="url" method="post" id="formulario">
+                <div class="titulos">
+                    <h1>VipCar</h1>
+                    <h2>Não perca tempo e acesse já o seu perfil.</h2>
+                </div>
+
+                <div class="flex">
+                    <input type="text" name="usuario" id="usuario" placeholder="Usuario">
+                    <small class="usuarioM msg"></small>
+                    <input class="margin" type="password" name="senha" id="senha" placeholder="Senha">
+                    <small class="senhaM msg"></small>
+                    <button id="button">Login</button>
+                </div>
+
+            </form>
+        </div>
+        <!-- Cadastro -->
+        <div class="formulario2">
+
+            <div class="icons">
+                <a href="../index.html">
+                    <img class="voltar" src="../Icon/voltar.svg" alt="seta para voltar">
+                </a>
+
+                <img onclick="sair2()" src="../Icon/x.svg" alt="x">
+            </div>
+
+
+            <form action="post" id="formulario2">
+                <div class="titulos2">
+                    <h1>VipCar</h1>
+                    <h2>Faça seu cadastro e junte-se a nós.</h2>
+                </div>
+
+                <div class="flex2">
+
+                    <input type="text" name="usuario" id="usuario2" placeholder="Usuario">
+                    <small class="usuario2Msg msg padding "></small>
+                    
+                    <input type="text" name="email" id="email" placeholder="E-mail">
+                    <small class="emailMsg msg padding "></small>
+                    
+                    <input type="password" name="usuario" id="senha2" placeholder="Senha">
+                    <small class="senha2Msg msg padding "></small>
+
+                    <button id="button2">Sign Up</button>
+                </div>
+
+            </form>
+
+        </div>
+    </div>
+
+    <script src="../js/script.js"></script>
+    <script src="../js/login.js"></script>
+</body>
+
+</html>

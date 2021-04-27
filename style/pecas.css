@@ -1,0 +1,379 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arvo', serif;
+    list-style: none;
+    text-decoration: none;
+    color: rgb(61, 59, 59);
+}
+
+/* Hide scrollbar for Chrome, Safari and Opera */
+body::-webkit-scrollbar {
+    display: none;
+}
+
+/* HEADER */
+
+
+.navegacao a {
+    text-decoration: none;
+    font-family: 'Prata', serif;
+    color: rgb(255, 255, 255);
+    font-size: 1.2rem;
+}
+
+.navegacao a:visited {
+    color: #ffffff;
+}
+
+.navegacao a:hover {
+    color: rgb(212, 212, 212);
+}
+
+.navegacao a:hover::after,
+.navegacao a:hover::before {
+    color: #b8b9b9;
+    transform: scaleX(1);
+    transition: transform 0.5s ease-in;
+}
+
+.navegacao a:hover::before {
+    transform-origin: right;
+}
+
+.navegacao a:hover::after {
+    transform-origin: left;
+}
+
+
+.navegacao a::after,
+.navegacao a::before {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 1px;
+    background-color: #808080;
+    margin-top: 2px;
+    margin-left: 2px;
+    transform: scaleX(0);
+    text-decoration: none;
+    transition: color 0.5s ease-in;
+
+}
+
+.navegacao {
+    padding: 20px 0 20px 0;
+    position: fixed;
+    z-index: 1;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.lista {
+    margin: 0 auto;
+    display: flex;
+    width: 100%;
+    max-width: 850px;
+    justify-content: space-evenly;
+}
+
+/* MENU HAMBURGUER */
+/* Icons */
+.icone {
+    padding: 0 30px 0 30px;
+    display: none;
+}
+
+
+.icone img {
+    width: 30px;
+    cursor: pointer;
+}
+
+/* Peças */
+.lines {
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+
+}
+
+.lines h1 {
+    margin: 0 20px 0 20px;
+    font-weight: bold;
+}
+
+
+.line {
+    width: 100%;
+    height: 3px;
+    background-color: rgb(61, 59, 59);
+}
+
+.line2 {
+    width: 100%;
+    height: 2px;
+    background-color: white;
+}
+
+/* Construção do LAYOUT */
+
+.produtos {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    width: 85%;
+    margin-top: 30px;
+    margin-bottom: 50px;
+    height: 100%;
+
+}
+
+.bloco {
+    padding: 30px;
+    justify-content: space-evenly;
+    width: 100%;
+    max-width: 1050px;
+    height: auto;
+    display: flex;
+    text-align: justify;
+    box-shadow: 1px 2px 5px rgb(116, 116, 116)
+}
+
+.foto {
+    margin-right: 20px;
+    width: 100%;
+    max-width: 400px;
+}
+
+.foto img {
+    width: 100%;
+    height: auto;
+}
+
+
+.info p {
+    max-width: 450px;
+}
+
+.espacamento {
+    margin-bottom: 45px;
+}
+
+.produto2 {
+    margin: 50px 0 50px 0;
+}
+
+
+/* ESTILIZAÇÃO DO BOTÃO */
+
+.button {
+    padding: 8px 18px;
+    background: none;
+    border-style: none;
+    box-shadow: 1px 2px 4px grey;
+    border-radius: 20px;
+    font-weight: bold;
+}
+
+/* Carrinho de compras */
+
+.carrinho {
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin: 15px 30px 0 0;
+    cursor: pointer;
+    z-index: 1;
+}
+
+.carrinho img {
+    width: 35px;
+}
+
+.bg-carrinho {
+    background-color: rgba(0, 0, 0, 0.5);
+    width: 100%;
+    max-width: 380px;
+    position: absolute;
+    top: 74px;
+    right: 0;
+    padding: 20px 30px 20px 20px ;
+    overflow: auto;
+    display: none;
+}
+
+.index {
+    z-index: 0;
+}
+
+.resultado  h2{
+    color: white;
+    font-size: 1rem;
+}
+
+
+
+/* Classes dinamicas */
+
+.mostrar {
+    display: block;
+}
+
+/* Estilização do produtos no carrinho */
+
+.color {
+    color: rgb(255, 255, 255);
+    font-size: 1.3rem;
+}
+
+.secondColor {
+    color: rgb(216, 215, 215);
+    font-size: 1rem;
+}
+
+.espaco {
+    margin-right: 10px;
+}
+
+.flexProdutos {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.infoProdutos div {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+
+.divImg {
+    width: 87px;
+    background-color: chocolate;
+    justify-self: flex-start;
+}
+
+.lanternaImg {
+    width: 100%;
+    border-radius: 5%;
+}
+
+
+@media only screen and (min-width: 641px) and (max-width: 1010px) {
+    .info {
+        margin-top: 40px;
+    }
+
+    .bloco {
+        flex-wrap: wrap;
+    }
+
+    .info p {
+        max-width: 700px;
+    }
+
+    .espacamento {
+        margin-bottom: 35px;
+    }
+
+    .margi {
+        margin-top: 30px;
+    }
+}
+
+
+
+@media only screen and (max-width: 641px) {
+    .navegacao {
+        position: absolute;
+        background-color: rgba(143, 6, 6, 0);
+        height: 100vh;
+    }
+
+
+    .lista {
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-evenly;
+        max-height: 60vh;
+        height: 100%;
+    }
+
+    .navegacao a {
+        font-size: 1.5rem;
+    }
+
+
+    .icone {
+        display: block;
+    }
+
+    .flex {
+        display: flex;
+        flex-direction: column;
+        align-self: center;
+        justify-content: center;
+        height: 100%;
+    }
+
+    .show {
+        width: 100%;
+        height: 100vh;
+        display: none;
+    }
+
+    /* PRODUTOS */
+
+    .bloco {
+        flex-wrap: wrap;
+    }
+
+    .info {
+        margin-top: 40px;
+    }
+
+    .espacamento {
+        margin-bottom: 25px;
+    }
+
+    .margi {
+        margin-top: 30px;
+    }
+
+    /* CLASSES DINAMICAS */
+
+    .disable {
+        pointer-events: none;
+    }
+
+    .display {
+        display: block;
+    }
+
+    .bg-color {
+        background-color: rgba(0, 0, 0, 0.849);
+    }
+
+    .bg-carrinho {
+        background-color: rgba(0, 0, 0, 0.5);
+        width: 100%;
+        max-width: 450px;
+        height: 100vh;
+        position: absolute;
+        top: 0;
+        right: 0;
+        padding: 20px;
+        overflow: auto;
+    }
+
+
+
+
+}

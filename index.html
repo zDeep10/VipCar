@@ -4,9 +4,10 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>VipCar</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="logo/Fav.png" type="image/x-icon">
+    <link rel="stylesheet" href="style/style.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Prata&display=swap" rel="stylesheet">
     <!-- <link rel="preconnect" href="https://fonts.gstatic.com"> -->
@@ -22,11 +23,11 @@
         <div class="grid">
             <header id="home">
 
-                <img class="logo" src="logo/Logo (2).png" alt="Logo VipCar">
+                <img class="logo" src="logo/Logo.png" alt="Logo VipCar">
 
                 <nav class="nav">
 
-                    <div class="hamburguer" onclick="change()">
+                    <div class="hamburguer" onclick="alterar()">
                         <div class="line"></div>
                         <div class="line"></div>
                         <div class="line"></div>
@@ -34,10 +35,11 @@
 
 
                     <ul class="lista">
-                        <li><a href="cad-log.html" target="_blank">Cadastro/Login</a></li>
                         <li><a href="#sobre">Sobre nós</a></li>
                         <li><a href="#produtos">Produtos</a></li>
-                        <li><a href="contato.html">Contato</a></li>      
+                        <li><a href="pages/pecas.html">Peças</a></li>
+                        <li><a href="pages/contato.html">Contato</a></li>
+                        <li><a href="pages/cad-log.html" target="_blank">Cadastro & Login</a></li> 
                     </ul>
 
                     <div class="bg-lista">
@@ -57,9 +59,9 @@
     <div class="grid2">
         <section class="sobrenos" id="sobre">
             <h2>Sobre nós</h2>
-            <p>
-                A VipCar acredita que a Satisfação do Cliente é uma condição indispensável para o seu sucesso,
-                oferecendo produtos e serviços superiores em termos de:
+            <div>
+                <p>A VipCar acredita que a Satisfação do Cliente é uma condição indispensável para o seu sucesso,
+                    oferecendo produtos e serviços superiores em termos de:</p> 
 
                 <p> • Qualidade, Confiabilidade e Segurança </p>
 
@@ -79,14 +81,14 @@
 
                     <li> • Melhorar continuamente os processos, produtos e serviços. </li>
                 </ul>
-            </p>
+            </div>
         </section>
         <!-- PEÇAS -->
         <section class="pecas" id="produtos">
             <h2 class="h2">Produtos</h2>
 
             <div class="motor flex espacDivs" id="produto2s">
-                <img onclick="aparecer1()" src="imgs/bg-motor.png" alt="Motor">
+                <img onmouseover="aparecer1()" src="imgs/bg-motor.png" alt="Motor">
                 <div class="espacamento click1">
                     <h2>Motor</h2>
                     <p>Nossos motores vão montados com cabeçotes completos, bloco, pistões, bielas, virabrequim,
@@ -98,11 +100,15 @@
                         aplicações onde houver necessidade de força.
                         <br><br>
                         Pronto para ser substituídos pelo motor com defeito.</p>
+
+                        <button class="btn">
+                            <a href="pages/pecas.html">Saiba mais</a>
+                        </button>
                 </div>
             </div>
 
             <div class="pneu flex espacDivs">
-                <img onclick="aparecer2()" src="imgs/bg-pneu.png" alt="Pneu">
+                <img onmouseover="aparecer2()" src="imgs/bg-pneu.png" alt="Pneu">
 
                 <div class="espacamento-inverso click2">
                     <h2>Pneu</h2>
@@ -115,11 +121,15 @@
                         Nosso pneus utilizam o que há de melhor em tecnologia para garantir a máxima satisfação no uso,
                         com
                         desempenho, segurança e durabilidade elevadas.</p>
+
+                        <button class="btn">
+                            <a href="pages/pecas.html">Saiba mais</a>
+                        </button>
                 </div>
             </div>
 
             <div class="volante flex espacDivs">
-                <img onclick="aparecer3()" src="imgs/bg-volante.png" alt="Volante">
+                <img onmouseover="aparecer3()" src="imgs/bg-volante.png" alt="Volante">
                 <div class="espacamento click3">
                     <h2>Volante</h2>
                     <p>Nossos volantes são revestidos 100% em poliuretano (não descasca),
@@ -131,13 +141,17 @@
                         qualidade padrão original.
                         <br><br>
                         Excelente oportunidade de economia comparado aos preços das montadoras</p>
+
+                        <button class="btn">
+                            <a href="pages/pecas.html">Saiba mais</a>
+                        </button>
                 </div>
             </div>
         </section>
     </div>
 
 
-    <script src="script.js"></script>
+    <script src="js/script.js"></script>
 </body>
 
 </html>

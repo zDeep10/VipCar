@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contato</title>
+    <link rel="stylesheet" href="../style/contato.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Flamenco:wght@300&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="container">
+
+        <div class="bloco">
+
+            <div class="bg">
+                <a href="../index.html">
+                    <img class="voltar" src="../Icon/voltar.svg" alt="seta para voltar">
+                </a>
+                <img class="logo" src="../logo/Logo.png" alt="Logo do site">¨
+
+                <div class="auxilio"></div>
+            </div>
+
+            <form action="url" method="post" id="formulario">
+
+                <h1 class="espacamento" style="align-self: center; letter-spacing: 1.5px;">Formulario de contato</h1>
+
+                <div class=" nome espacamento">
+                    <label for="nome">Nome completo</label>
+                    <input type="text" id="nome" name="nome" >
+                    <small class="teste">Erro Message</small>
+                </div>
+
+                <div class="email espacamento">
+                    <label for="email">E-mail</label>
+                    <input type="text" id="email" name="email">
+                    <small>Erro Message</small>
+                </div>
+
+                <div class="tel espacamento">
+                    <label for="telefone">Telefone</label>
+                    <input type="number" id="telefone" name="telefone">
+                    <small>Erro Message</small>
+                </div>
+
+                <div class="nascimento espacamento">
+                    <label for="nascimento">Nascimento</label>
+                    <input type="date" id="nascimento" name="nascimento">
+                    <small>Erro Message</small>
+                </div>
+
+                <textarea name="mensagem" id="mensagem" cols="30" rows="10" placeholder="Mensagem"></textarea>
+
+                <input type="submit" name="enviar" id="enviar" class="btn">
+
+            </form>
+        </div>
+    </div>
+    <script src="../js/script.js"></script>
+    <script src="../js/contato.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Peças</title>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
+        integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Arvo:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Prata&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../style/pecas.css">
+
+</head>
+
+<body>
+
+    <header>
+
+        <nav class="navegacao">
+
+            <div class="icone">
+                <img class="hamburguer" src="../Icon/hamburguer-icon-branco.svg" alt="">
+            </div>
+
+            <div class="show">
+                <div class="flex">
+                    <div class="lista">
+                        <li><a href="../index.html">Home</a></li>
+                        <li><a href="../pages/contato.html">Contato</a></li>
+                        <li><a href="../pages/cad-log.html">Cadastro & Login</a></li>
+                    </div>
+                </div>
+            </div>
+
+            <div class="carrinho">
+                <img src="../Icon/carrinho-branco.svg" alt="">
+            </div>
+
+            <div class="bg-carrinho">
+                <div class="itens-carrinho">
+                </div>
+
+                <div class="resultado">
+                    <h2 class="teste">Subtotal:</h2>
+                    <h2>Total a pagar:</h2>
+                </div>
+            </div>
+
+        </nav>
+
+
+        <div id="carouselExampleIndicators" class="carousel slide hide" data-ride="carousel">
+            <ol class="carousel-indicators">
+                <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+            </ol>
+            <div class="carousel-inner">
+
+                <div class="carousel-item active">
+                    <img src="../imgs/img2.jpg" class="d-block w-100 " alt="...">
+                </div>
+                <div class="carousel-item">
+                    <img src="../imgs/img1.jpg" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                    <img src="../imgs/img3.jpg" class="d-block w-100" alt="...">
+                </div>
+            </div>
+
+
+        </div>
+    </header>
+
+
+    <section id="pecas">
+        <div class="lines">
+            <div class="line"></div>
+            <h1>Peças</h1>
+            <div class="line"></div>
+
+        </div>
+
+        <div class="produtos">
+            <div class="bloco produto1">
+
+                <div class="foto">
+                    <img src="../imgs/produtos/lanterna.webp" alt="lanternas">
+                </div>
+
+                <div class="info">
+                    <h2 class="espacamento ">Lanternas</h2>
+
+                    <p class="espacamento ">Esse Farol Máscara Negra desenvolvido para Palio, Siena e Strada de vários
+                        anos possui foco
+                        duplo, com encaixes H7 para os dois faróis e pisca embutido, que contribuem para melhor
+                        visibilidade do motorista. É fabricado em material de alta qualidade e durabilidade, com carcaça
+                        plástica resistente e lentes lisas em acrílico.</p>
+
+                    <p class="espacamento" style="font-size: 1.2rem;"> R$ 268,90</p>
+
+                    <button class=" button lanterna-btn">Adicionar ao carrinho</button>
+                    <!-- <div class="btn"></div> -->
+                </div>
+
+            </div>
+
+            <div class="bloco produto2">
+
+                <div class="foto margi" style="order: 1;">
+                    <img src="../imgs/produtos/multemedia.webp" alt="kit multimídia">
+                </div>
+
+                <div class="info">
+                    <h2 class="espacamento ">Central Multimídia</h2>
+
+                    <p class="espacamento" style="order: 1;">Esse player automotivo conta com inúmeros recursos, como o
+                        bluetooth,
+                        entradas USB,auxiliar, micro SD e oespelhamento de tela, todos eles para dar suporte e
+                        possibilidades para que você reproduza suas músicas favoritas.</p>
+
+                    <p class="espacamento" style="font-size: 1.2rem;"> R$ 398,90</p>
+
+                    <button class=" button central-btn">Adicionar ao carrinho</button>
+
+                    <!-- <div class="btn"></div> -->
+                </div>
+
+            </div>
+
+            <div class="bloco produto3">
+
+                <div class="foto">
+                    <img src="../imgs/produtos/capa.webp" alt="capa">
+                </div>
+
+                <div class="info">
+                    <h2 class="espacamento ">Capa</h2>
+
+                    <p class="espacamento ">Com coloração cinza que repele os raios UV, seu carro fica mais conservado
+                        na sua garagem ou na rua, proporcionando alta defesa contra chuva, sol, detritos, fuligem, entre
+                        outras coisas que podem danificar seu automóvel.</p>
+
+                    <p class="espacamento" style="font-size: 1.2rem;"> R$ 180,90</p>
+
+                    <button class=" button capa-btn">Adicionar ao carrinho</button>
+
+                    <!-- <div class="btn"></div> -->
+                </div>
+
+            </div>
+
+        </div>
+
+
+    </section>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns"
+        crossorigin="anonymous"></script>
+    <script src="../js/pecas.js"></script>
+</body>
+
+</html>
